@@ -31,6 +31,12 @@ public class VarastoTest {
     }
 
     @Test
+    public void negatiivinenLisays() {
+        varasto.lisaaVarastoon(1);
+        assertEquals(0, varasto.getSaldo(), vertailuTarkkuus);
+    }
+
+    @Test
     public void lisaysLisaaSaldoa() {
         varasto.lisaaVarastoon(8);
 
